@@ -19,6 +19,9 @@
 		DEE6D1D82B56C0AC00C149A2 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1D72B56C0AC00C149A2 /* CoinRowView.swift */; };
 		DEE6D1DA2B56C11400C149A2 /* PreviewProvider+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1D92B56C11400C149A2 /* PreviewProvider+Ext.swift */; };
 		DEE6D1DC2B56C99C00C149A2 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1DB2B56C99C00C149A2 /* Double+Ext.swift */; };
+		DEE6D1DE2B57BEEC00C149A2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1DD2B57BEEC00C149A2 /* HomeViewModel.swift */; };
+		DEE6D1E12B57C58000C149A2 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1E02B57C58000C149A2 /* CoinDataService.swift */; };
+		DEE6D1E42B57E7C000C149A2 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1E32B57E7C000C149A2 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		DEE6D1D72B56C0AC00C149A2 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		DEE6D1D92B56C11400C149A2 /* PreviewProvider+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Ext.swift"; sourceTree = "<group>"; };
 		DEE6D1DB2B56C99C00C149A2 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		DEE6D1DD2B57BEEC00C149A2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DEE6D1E02B57C58000C149A2 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		DEE6D1E32B57E7C000C149A2 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		DEE6D1B42B569F3F00C149A2 /* CryptoApp-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DEE6D1E22B57E79000C149A2 /* Utilities */,
+				DEE6D1DF2B57C55000C149A2 /* Services */,
 				DEE6D1D42B56B40E00C149A2 /* Model */,
 				DEE6D1C52B56A05100C149A2 /* Extensions */,
 				DEE6D1C82B56A1D000C149A2 /* Core */,
@@ -126,6 +134,7 @@
 		DEE6D1CB2B56A1F200C149A2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DEE6D1DD2B57BEEC00C149A2 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,6 +162,22 @@
 				DEE6D1D52B56B42C00C149A2 /* CoinModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DEE6D1DF2B57C55000C149A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEE6D1E02B57C58000C149A2 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEE6D1E22B57E79000C149A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DEE6D1E32B57E7C000C149A2 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE6D1E12B57C58000C149A2 /* CoinDataService.swift in Sources */,
 				DEE6D1D82B56C0AC00C149A2 /* CoinRowView.swift in Sources */,
+				DEE6D1DE2B57BEEC00C149A2 /* HomeViewModel.swift in Sources */,
 				DEE6D1B82B569F3F00C149A2 /* ContentView.swift in Sources */,
 				DEE6D1CD2B56A20300C149A2 /* HomeView.swift in Sources */,
 				DEE6D1B62B569F3F00C149A2 /* CryptoApp_SwiftUIApp.swift in Sources */,
 				DEE6D1DC2B56C99C00C149A2 /* Double+Ext.swift in Sources */,
 				DEE6D1DA2B56C11400C149A2 /* PreviewProvider+Ext.swift in Sources */,
+				DEE6D1E42B57E7C000C149A2 /* NetworkingManager.swift in Sources */,
 				DEE6D1D12B56AB8F00C149A2 /* CircleButtonView.swift in Sources */,
 				DEE6D1C72B56A05E00C149A2 /* Color+Ext.swift in Sources */,
 				DEE6D1D32B56AF0600C149A2 /* CircleButtonAnimationView.swift in Sources */,
