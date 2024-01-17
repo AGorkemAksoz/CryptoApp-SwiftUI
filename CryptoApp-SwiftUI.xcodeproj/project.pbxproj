@@ -26,6 +26,8 @@
 		DEE6D1E92B57F09100C149A2 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1E82B57F09100C149A2 /* CoinImageService.swift */; };
 		DEE6D1EB2B57F98B00C149A2 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1EA2B57F98B00C149A2 /* CoinImageViewModel.swift */; };
 		DEE6D1ED2B57FCF700C149A2 /* LocaleFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1EC2B57FCF700C149A2 /* LocaleFileManager.swift */; };
+		DEE6D1F02B580EC100C149A2 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1EF2B580EC100C149A2 /* SearchBarView.swift */; };
+		DEE6D1F22B58178400C149A2 /* UIAppliaction+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D1F12B58178400C149A2 /* UIAppliaction+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		DEE6D1E82B57F09100C149A2 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		DEE6D1EA2B57F98B00C149A2 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		DEE6D1EC2B57FCF700C149A2 /* LocaleFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleFileManager.swift; sourceTree = "<group>"; };
+		DEE6D1EF2B580EC100C149A2 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		DEE6D1F12B58178400C149A2 /* UIAppliaction+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAppliaction+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				DEE6D1C62B56A05E00C149A2 /* Color+Ext.swift */,
 				DEE6D1D92B56C11400C149A2 /* PreviewProvider+Ext.swift */,
 				DEE6D1DB2B56C99C00C149A2 /* Double+Ext.swift */,
+				DEE6D1F12B58178400C149A2 /* UIAppliaction+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		DEE6D1CE2B56AB5500C149A2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEE6D1EE2B580EAF00C149A2 /* Search Bar */,
 				DEE6D1E52B57EF4C00C149A2 /* Coin Image */,
 				DEE6D1CF2B56AB6C00C149A2 /* CircleButton */,
 			);
@@ -198,6 +204,14 @@
 				DEE6D1EA2B57F98B00C149A2 /* CoinImageViewModel.swift */,
 			);
 			path = "Coin Image";
+			sourceTree = "<group>";
+		};
+		DEE6D1EE2B580EAF00C149A2 /* Search Bar */ = {
+			isa = PBXGroup;
+			children = (
+				DEE6D1EF2B580EC100C149A2 /* SearchBarView.swift */,
+			);
+			path = "Search Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +294,8 @@
 				DEE6D1DC2B56C99C00C149A2 /* Double+Ext.swift in Sources */,
 				DEE6D1DA2B56C11400C149A2 /* PreviewProvider+Ext.swift in Sources */,
 				DEE6D1E42B57E7C000C149A2 /* NetworkingManager.swift in Sources */,
+				DEE6D1F02B580EC100C149A2 /* SearchBarView.swift in Sources */,
+				DEE6D1F22B58178400C149A2 /* UIAppliaction+Ext.swift in Sources */,
 				DEE6D1D12B56AB8F00C149A2 /* CircleButtonView.swift in Sources */,
 				DEE6D1EB2B57F98B00C149A2 /* CoinImageViewModel.swift in Sources */,
 				DEE6D1C72B56A05E00C149A2 /* Color+Ext.swift in Sources */,
@@ -429,6 +445,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
