@@ -21,8 +21,10 @@ struct CircleButtonAnimationView: View {
     }
 }
 
-#Preview {
-    CircleButtonAnimationView(animate: .constant(false))
-        .foregroundColor(.red)
-        .frame(width: 100, height: 100)
+struct CircleButtonAnimationView_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleButtonAnimationView(animate: .constant(false))
+            .foregroundColor(.red)
+            .frame(width: 100, height: 100)
+    }
 }

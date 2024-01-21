@@ -53,9 +53,9 @@ struct CoinModel: Codable {
     let id, symbol, name: String?
     let image: String?
     let currentPrice: Double?
-    let marketCap, marketCapRank: Int?
+    let marketCap, marketCapRank: Double?
     let fullyDilutedValuation: Int?
-    let totalVolume: Int?
+    let totalVolume: Double?
     let high24H, low24H, priceChange24H, priceChangePercentage24H: Double?
     let marketCapChange24H, marketCapChangePercentage24H, circulatingSupply: Double?
     let totalSupply, maxSupply: Double?

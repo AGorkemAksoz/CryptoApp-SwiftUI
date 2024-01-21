@@ -29,10 +29,10 @@ struct PortfolioView: View {
             .navigationTitle("Edit Portfolio")
             .navigationBarTitleDisplayMode(.large)
             .toolbar(content: {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     XMarkButton()
                 }
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     trailingNavBarButtons
                 }
             })

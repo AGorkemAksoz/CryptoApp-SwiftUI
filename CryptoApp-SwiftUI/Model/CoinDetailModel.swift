@@ -119,6 +119,10 @@ struct CoinDetailModel: Codable {
         case categories
         case description, links
     }
+    
+    var readeblaDescription: String? {
+        return description?.en?.removingHTMLOccurances
+    }
 }
 
 // MARK: - Description
