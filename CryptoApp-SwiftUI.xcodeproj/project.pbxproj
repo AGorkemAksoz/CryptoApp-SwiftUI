@@ -95,6 +95,7 @@
 		DEE6D20F2B5AA3BF00C149A2 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		DEE6D2112B5AA59900C149A2 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
 		DEE6D2132B5AA7E500C149A2 /* CoinDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModel.swift; sourceTree = "<group>"; };
+		DEE6D2332B5E8D6000C149A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +161,7 @@
 		DEE6D1B42B569F3F00C149A2 /* CryptoApp-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DEE6D2332B5E8D6000C149A2 /* Info.plist */,
 				DEE6D1E22B57E79000C149A2 /* Utilities */,
 				DEE6D1DF2B57C55000C149A2 /* Services */,
 				DEE6D1D42B56B40E00C149A2 /* Model */,
@@ -568,9 +570,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = DC2CCCCLGJ;
+				DEVELOPMENT_TEAM = JKQNUCPDQL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CryptoApp-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -603,9 +606,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = DC2CCCCLGJ;
+				DEVELOPMENT_TEAM = JKQNUCPDQL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CryptoApp-SwiftUI/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

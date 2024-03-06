@@ -10,10 +10,13 @@ import Foundation
 
 class MarketDataService {
     
+    private let networking: NetworkingManager
+    
     @Published var marketData : MarketDataModel? = nil
     var marketDataSubsscription: AnyCancellable?
     
-    init() {
+    init(networking: NetworkingManager) {
+        self.networking = networking
         getData()
     }
     
@@ -21,9 +24,9 @@ class MarketDataService {
     func getData() {
         guard let url = URL(string: "https://api.coingecko.com/api/v3/global") else { return }
         
-        marketDataSubsscription = NetworkingManager.download(url: url)
+        marketDataSubsscription = networking.download(url: url)
             .decode(type: GlobalData.self, decoder: JSONDecoder())
-            .sink(receiveCompletion: NetworkingManager.handleCompletion,
+            .sink(receiveCompletion: networking.handleCompletion,
                   receiveValue: { [weak self] returnedData in
                 self?.marketData = returnedData.data
                 self?.marketDataSubsscription?.cancel()

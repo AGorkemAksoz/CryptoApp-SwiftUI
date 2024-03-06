@@ -17,8 +17,8 @@ class HomeViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var sortOption: SortOption = .holdings
     
-    private let coinDataService = CoinDataService()
-    private let marketDataService = MarketDataService()
+    private let coinDataService = CoinDataService(networking: NetworkingManager())
+    private let marketDataService = MarketDataService(networking: NetworkingManager())
     private let portfolioDataService = PortfolioDataService()
     
     private var cancellables = Set<AnyCancellable>()

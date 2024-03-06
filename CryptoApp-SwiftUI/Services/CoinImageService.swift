@@ -18,9 +18,11 @@ class CoinImageService {
     private let fileManager = LocaleFileManager.shared
     private let folderName = "coin_images"
     private let imageName: String
+    private let networking: NetworkingManager
     
-    init(coin: CoinModel) {
+    init(coin: CoinModel, networking: NetworkingManager) {
         self.coin = coin
+        self.networking = networking
         self.imageName = coin.id!
         getCoinImage()
     }
@@ -36,11 +38,11 @@ class CoinImageService {
     private func downloadCoinImage() {
         guard let url = URL(string: coin.image!) else { return }
         
-        imageSubscription = NetworkingManager.download(url: url)
+        imageSubscription = networking.download(url: url)
             .tryMap({ (data) -> UIImage? in
                 return UIImage(data: data)
             })
-            .sink(receiveCompletion: NetworkingManager.handleCompletion,
+            .sink(receiveCompletion: networking.handleCompletion,
                   receiveValue: { [weak self] returnedImage in
                 guard let self = self,
                 let downLoadedImage = returnedImage else { return }

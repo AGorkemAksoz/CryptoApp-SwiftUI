@@ -23,7 +23,7 @@ class CoinDetailViewModel: ObservableObject {
     
     init(coin: CoinModel) {
         self.coin = coin
-        self.coinDetailService = CoinDetailDataService(coin: coin)
+        self.coinDetailService = CoinDetailDataService(coin: coin, networking: NetworkingManager())
         self.addSubscribers()
     }
     

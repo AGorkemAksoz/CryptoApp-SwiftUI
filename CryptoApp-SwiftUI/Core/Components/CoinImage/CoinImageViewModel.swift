@@ -19,7 +19,7 @@ class CoinImageViewModel: ObservableObject {
     
     init(coin: CoinModel) {
         self.coin = coin
-        self.dataService = CoinImageService(coin: coin)
+        self.dataService = CoinImageService(coin: coin, networking: NetworkingManager())
         self.addSubscribers()
         self.isLoading = true
     }
